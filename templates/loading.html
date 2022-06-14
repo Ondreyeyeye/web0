@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>    
+    <meta http-equiv="refresh" content="3; URL=/calculator">
+    <style type="text/css">
+        h1 { 
+            color: rgb(102, 255, 0);
+        }
+        body {
+            background-color: black;
+        }
+        p1 {
+            color: rgb(102, 255, 0);
+        }
+        .blink {
+            animation: blink 1s infinite; /* Параметры анимации */
+        }
+        @keyframes blink {
+        from { opacity: 1; /* Непрозрачный текст */ }
+        to { opacity: 0; /* Прозрачный текст */ }
+        }
+        .appear {
+            animation: 7s show ease;
+        }
+        @keyframes show {
+        from { opacity: 0; }
+        to { opacity: 1; }
+        }
+       </style>
+</head>
+<body>
+    <p1>C:\Users\Andrey\VsCode\web0>python -m venv venv
+
+        C:\Users\Andrey\VsCode\web0>venv\Scripts\activate
+        
+        (venv) C:\Users\Andrey\VsCode\web0>pip install flask
+        Collecting flask
+          Using cached Flask-2.1.2-py3-none-any.whl (95 kB)
+        Collecting click>=8.0
+          Using cached click-8.1.3-py3-none-any.whl (96 kB)
+        Collecting itsdangerous>=2.0
+          Using cached itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+        Collecting Werkzeug>=2.0
+          Using cached Werkzeug-2.1.2-py3-none-any.whl (224 kB)
+        Collecting Jinja2>=3.0
+          Using cached Jinja2-3.1.2-py3-none-any.whl (133 kB)
+        Collecting colorama
+          Using cached colorama-0.4.4-py2.py3-none-any.whl (16 kB)
+        Collecting MarkupSafe>=2.0
+          Using cached MarkupSafe-2.1.1-cp310-cp310-win_amd64.whl (17 kB)
+        Installing collected packages: MarkupSafe, colorama, Werkzeug, Jinja2, itsdangerous, click, flask
+        Successfully installed Jinja2-3.1.2 MarkupSafe-2.1.1 Werkzeug-2.1.2 click-8.1.3 colorama-0.4.4 flask-2.1.2 itsdangerous-2.1.2
+        WARNING: You are using pip version 21.2.4; however, version 22.1.2 is available.
+        You should consider upgrading via the 'C:\Users\Andrey\VsCode\web0\venv\Scripts\python.exe -m pip install --upgrade pip' command.
+        
+        (venv) C:\Users\Andrey\VsCode\web0>set FLASK_APP=app.py
+        
+        (venv) C:\Users\Andrey\VsCode\web0>set FLASK_ENV=development
+        
+        (venv) C:\Users\Andrey\VsCode\web0>flask run
+         * Serving Flask app 'app.py' (lazy loading)
+         * Environment: development
+         * Debug mode: on
+         * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+         * Restarting with stat
+         * Debugger is active!
+         * Debugger PIN: 137-195-418
+        127.0.0.1 - - [12/Jun/2022 14:09:01] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:09:02] "GET /favicon.ico HTTP/1.1" 404 -
+        127.0.0.1 - - [12/Jun/2022 14:09:04] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:11:40] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:11:58] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:12:35] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:13:48] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:14:39] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:17:54] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:17:57] "GET /?cm=25 HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:18:02] "GET /?cm=2322 HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:18:04] "GET /?cm=22 HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:18:21] "GET /?cm=55555 HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:18:27] "GET /?cm=233333 HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:19:06] "GET /?cm=233333 HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:19:12] "GET /?cm=233333 HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:19:12] "GET /?cm=233333 HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:24:13] "GET /?cm=233333 HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:24:22] "GET /?cm=233333 HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:24:33] "GET /?cm=233333 HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:24:42] "GET /?cm=233333 HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:24:56] "GET /?cm=233333 HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:25:00] "GET /?cm=233333 HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:25:03] "GET /?cm=233333 HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:25:04] "GET /?cm=233333 HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:25:07] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:25:13] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:26:09] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:26:25] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:26:49] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:27:02] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:27:37] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:27:52] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:27:55] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:28:01] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:28:25] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:28:31] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:28:32] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:28:40] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:28:56] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:30:04] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:30:50] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:30:51] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - - [12/Jun/2022 14:30:59] "GET / HTTP/1.1" 200 -
+        127.0.0.1 - 127.0.0.1 -</p1>
+        
+      <p1 class="blink">Loading...</p1>
+
+</body>
+</html>

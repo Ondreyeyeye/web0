@@ -1,0 +1,97 @@
+* {
+    background-color: #000;
+    color: rgb(102, 255, 0);
+}
+
+.login {
+    font-size: large; 
+    align-self: center;
+    border: 1px solid rgb(102, 255, 0);
+    border-radius: 2px;
+    background: #000;
+    font-family: Arial;
+    padding: 10px;
+    box-shadow: 4px 4px 4px rgb(102, 255, 0);
+    
+}
+
+.calc {
+    width: 500px;
+    height: 530px;
+    color: rgb(102, 255, 0);
+    border: 1px solid rgb(102, 255, 0);
+    border-radius: 2px;
+    background: #000;
+    font-family: Arial;
+    padding: 10px;
+    box-shadow: 4px 4px 4px rgb(102, 255, 0);
+}
+
+.window {
+    width: 500px;
+    height: 450px;
+    color: rgb(102, 255, 0);
+    border: 1px solid rgb(102, 255, 0);
+    border-radius: 2px;
+    background: #000;
+    font-family: Arial;
+    padding: 10px;
+    box-shadow: 4px 4px 4px rgb(102, 255, 0);
+}
+
+.calc-screen {
+    height: 80px;
+    width: 450px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+}
+
+.calc-screen p {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas: 
+    "a b c d"
+    "e f g h"
+    "i j k l"
+    "m n o p"
+    "zero zero q r";
+    grid-gap: 10px;
+}
+
+.btn {
+    width: 75px;
+    height: 75px;
+    background: #333;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 73px;
+    font-size: 1.85rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn:hover {
+    filter: brightness(120%);
+}
+
+.btn:active {
+    filter: brightness(90%);
+}
+
+.btn.bg-grey {
+    background: #2fa0a8;
+}
+
+.btn.bg-green {
+    background: rgb(255, 0, 0);
+}
+
+input {
+    color: rgb(102, 255, 0);
+}
