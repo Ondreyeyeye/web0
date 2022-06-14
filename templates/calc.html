@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
+    <title>calculator</title>
+</head>
+<body>
+    <div class="calc">
+        <div class="calc-screen">
+            <p>{{x}} {{sign}} {{y}}</p>
+        </div>
+        <div class="buttons">
+            <!-- <div class="btn ac bg-grey">ac</div> -->
+            <form action="/counting" method="post">
+                <input type="hidden" name="index" value="ac"> 
+                <input type="submit" class="btn ac bg-grey" value="ac">
+            </form> 
+            <!-- <div class="btn plus-minus bg-grey">+/-</div> -->
+            <form action="/counting" method="post">
+                <input type="hidden" name="index" value="+/-"> 
+                <input type="submit" class="btn plus-minus bg-grey" value="+/-">
+            </form> 
+            <!-- <div class="btn percent bg-grey">%</div> -->
+            <form action="/counting" method="post">
+                <input type="hidden" name="index" value="%"> 
+                <input type="submit" class="btn percent bg-grey" value="%">
+            </form> 
+            <!-- <div class="btn division bg-green">/</div> -->
+            <form action="/counting" method="post">
+                <input type="hidden" name="index" value="/"> 
+                <input type="submit" class="btn division bg-green" value="/">
+            </form> 
+
+
+
+            <!-- <div class="btn seven">7</div> -->
+            <form action="/counting" method="post">
+                <input type="hidden" name="index" value="7"> 
+                <input type="submit" class="btn seven" value="7">
+            </form>
+            <!-- <div class="btn eight">8</div> -->
+            <form action="/counting" method="post">
+                <input type="hidden" name="index" value="8"> 
+                <input type="submit" class="btn eight" value="8">
+            </form>
+            <!-- <div class="btn nine">9</div> -->
+            <form action="/counting" method="post">
+                <input type="hidden" name="index" value="9"> 
+                <input type="submit" class="btn nine" value="9">
+            </form>
+            <!-- <div class="btn myltiply bg-green">X</div> -->
+            <form action="/counting" method="post">
+                <input type="hidden" name="index" value="x"> 
+                <input type="submit" class="btn myltiply bg-green" value="x">
+            </form> 
+
+
+
+            <!-- <div class="btn four">4</div> -->
+            <form action="/counting" method="post">
+                <input type="hidden" name="index" value="4"> 
+                <input type="submit" class="btn four" value="4">
+            </form>
+            <!-- <div class="btn five">5</div> -->
+            <form action="/counting" method="post">
+                <input type="hidden" name="index" value="5"> 
+                <input type="submit" class="btn five" value="5">
+            </form>
+            <!-- <div class="btn six">6</div> -->
+            <form action="/counting" method="post">
+                <input type="hidden" name="index" value="6"> 
+                <input type="submit" class="btn six" value="6">
+            </form>
+            <!-- <div class="btn minus bg-green">-</div> -->
+            <form action="/counting" method="post">
+                <input type="hidden" name="index" value="-"> 
+                <input type="submit" class="btn minus bg-green" value="-">
+            </form> 
+
+
+
+            <!-- <div class="btn one">1</div> -->
+            <form action="/counting" method="post">
+                <input type="hidden" name="index" value="1"> 
+                <input type="submit" class="btn one" value="1">
+            </form>
+            <!-- <div class="btn two">2</div> -->
+            <form action="/counting" method="post">
+                <input type="hidden" name="index" value="2"> 
+                <input type="submit" class="btn two" value="2">
+            </form>
+            <!-- <div class="btn three">3</div> -->
+            <form action="/counting" method="post">
+                <input type="hidden" name="index" value="3"> 
+                <input type="submit" class="btn three" value="3">
+            </form>
+            <!-- <div class="btn plus bg-green">+</div> -->
+            <form action="/counting" method="post">
+                <input type="hidden" name="index" value="+"> 
+                <input type="submit" class="btn plus bg-green" value="+">
+            </form> 
+
+
+
+            <!-- <div class="btn zero">0</div> -->
+            <form action="/counting" method="post">
+                <input type="hidden" name="index" value="0"> 
+                <input type="submit" class="btn zero" value="0">
+            </form> 
+            <!-- <div class="btn dot">.</div> -->
+            <form action="/counting" method="post">
+                <input type="hidden" name="index" value="."> 
+                <input type="submit" class="btn dot" value=".">
+            </form> 
+            <!-- <div class="btn equal bg-red">=</div> -->
+            <form action="/counting" method="post">
+                <input type="hidden" name="index" value="="> 
+                <input type="submit" class="btn equal bg-red" value="=">
+            </form> 
+            <div class="btn">:)</div>
+        </div>
+    </div>
+</body>
+</html>
