@@ -8,12 +8,12 @@
     <title>Login</title>
 </head>
 <body style="text-align: center">
-    <p style="font-size: 25px; font-weight: bold;">VOIDITE</p>
-    <!-- <p>Username:</p><input class="login" type="text" name="username"> -->
-    <label for="user">User:</label> 
-    <input class="login" name="user" type="text"><p></p>
-    <label for="password">Password:</label>
-    <input class="login" name="password" type="password"> 
-    <p></p><input class="btn" type="submit" value="OK">
+    <p style="font-size: 25px; font-weight: bold;">Login</p>
+    <form class="logining" method="post">
+        <input type="text" name="login" id="login" class="logining"><br>
+        <input type="text" name="password" id="password" class="logining"><br>
+        <input type="submit" class="logining" value="Log in"><br>
+    </form>
+    <a href="/registration" class="logining">Don't have an account?</a>
 </body>
 </html>

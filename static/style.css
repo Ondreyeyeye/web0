@@ -3,7 +3,11 @@
     color: rgb(102, 255, 0);
 }
 
-.login {
+.message {
+    border: 1px solid rgb(102, 255, 0);
+}
+
+.logining {
     font-size: large; 
     align-self: center;
     border: 1px solid rgb(102, 255, 0);
@@ -11,6 +15,7 @@
     background: #000;
     font-family: Arial;
     padding: 10px;
+    margin-bottom: 15px;
     box-shadow: 4px 4px 4px rgb(102, 255, 0);
     
 }
