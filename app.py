@@ -25,6 +25,8 @@ class Regs(db.Model):
 def main():
     login_test = request.args['login_test']
 
+    
+
     return render_template("main.html", login=login_test)
 
 
